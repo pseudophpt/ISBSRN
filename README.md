@@ -11,3 +11,25 @@ There are probably millions of implementations of this, millions of which are be
 `closed_node` indicates a closing bracket. It marks the current node as closed, and returns to the parent.
 
 Both return a pointer to a `parse_node` which indicates the current state of the parsing tree.
+
+#### Example
+
+Parsing `((())()(()`
+[tree image](tree.png)
+
+By hand, we can also get the answer of 
+
+```
+(
+    (
+        (
+        )
+    )
+    (
+    )
+    (
+    	(
+        )
+
+```
+
