@@ -12,7 +12,7 @@ There are probably millions of implementations of this, millions of which are be
 
 Both return a pointer to a `parse_node` which indicates the current state of the parsing tree.
 
-Code to parse a list of booleans giving open or close 
+Code to parse a list of booleans giving open or close:
 
 ```cpp
 int main () {
