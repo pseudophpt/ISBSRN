@@ -15,7 +15,7 @@ Both return a pointer to a `parse_node` which indicates the current state of the
 #### Example
 
 Parsing `((())()(()`
-[tree image](tree.png)
+![tree image](tree.png)
 
 By hand, we can also get the answer of 
 
