@@ -12,7 +12,7 @@ There are probably millions of implementations of this, millions of which are be
 
 Both return a pointer to a `parse_node` which indicates the current state of the parsing tree.
 
-Code to parse a list of booleans giving open or close (uncomment the lines to see how the algorithm performs on your computer)
+Code to parse a list of booleans giving open or close 
 
 ```cpp
 int main () {
@@ -20,15 +20,10 @@ int main () {
     
     std::vector<bool> bracks = {1, 0, 1, 0};
     
-    //auto start = clock();
     for (bool b : bracks) {
         if (b) current = current->open_node();
         else current = current->close_node();
     }
-    
-    //auto end = clock();
-    
-    //std::cout << (end - start) << " microseconds";
 }
 ```
 
