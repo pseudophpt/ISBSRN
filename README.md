@@ -12,8 +12,11 @@ There are probably millions of implementations of this, millions of which are be
 
 Both return a pointer to a `parse_node` which indicates the current state of the parsing tree.
 
+#### Speed
 
-Code to parse a list of booleans giving open or close
+
+```
+Code to parse a list of booleans giving open or close (uncomment the lines to see how the algorithm performs on your computer)
 
 ```cpp
 int main () {
@@ -21,38 +24,38 @@ int main () {
     
     std::vector<bool> bracks = {1, 0, 1, 0};
     
+    //auto start = clock();
     for (bool b : bracks) {
         if (b) current = current->open_node();
         else current = current->close_node();
     }
+    
+    //auto end = clock();
+    
+    //std::cout << (end - start) << " microseconds";
 }
 ```
 
-#### Speed
-
 This algorithm is `O(n)`. 
 
-Bracket count | Speed (μs)
+Bracket count | Speed (μs) 
 --- | ---
-4  | 4.98 
-8 | 7.866
-16 | 12.527
-32 | 20.047
-64 | 32.193
-128 | 50.675
-256 | 76.345
-512 | 112.582
-1024 | 207.7
-2048 | 421.905
-4096 | 850.918
-8192 | 1685.11
-16384 | 3424.79
-32768 | 6792.68
+2 | 1.514
+4 | 2.17
+8 | 3.611
+16 | 6.45
+32 | 12.295
+64 | 24.396
+128 | 48.1715
+256 | 94.8365
+512 | 188.266
+1024 | 375.211
+2048 | 749.769
+4096 | 1497.3
+8192 | 2992.72
+16384 | 5970.11
 
-1000 μs = 1 ms, 1000000 μs = 1s
-
-Speed may differ on your computer, run `make test` (if you want to compile yourself, optional) and `./isbsrn` to find how it runs on yours.
-
+10<sup>3</sup>μs = 1ms, 10<sup>6</sup>μs = 1s
 #### Example
 
 Parsing `((())()(()`
