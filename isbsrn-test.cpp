@@ -45,6 +45,6 @@ int main () {
         }
     }   
     for (int sample = 0; sample < size; sample ++) {
-        std::cout << "n: " << (2 << sample) << " t: " << speed_amounts[sample] / times << std::endl;
+        std::cout << "n: " << (4 << sample) << " t: " << speed_amounts[sample] / times << std::endl;
     }
 }
