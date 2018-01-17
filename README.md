@@ -4,7 +4,7 @@ But I needed to write something to parse a file of brackets for syntax highlight
 
 There are probably millions of implementations of this, millions of which are better than mine. So be it, because C++ can be fun to write in.
 
-#### Usage
+## Usage
 
 `open_node` indicates an opening bracket. It adds a child to the current bracket and recursively starts again.
 
@@ -12,10 +12,6 @@ There are probably millions of implementations of this, millions of which are be
 
 Both return a pointer to a `parse_node` which indicates the current state of the parsing tree.
 
-#### Speed
-
-
-```
 Code to parse a list of booleans giving open or close (uncomment the lines to see how the algorithm performs on your computer)
 
 ```cpp
@@ -35,6 +31,8 @@ int main () {
     //std::cout << (end - start) << " microseconds";
 }
 ```
+
+## Speed
 
 This algorithm is `O(n)`. 
 
@@ -56,7 +54,8 @@ Bracket count | Speed (μs)
 16384 | 5970.11
 
 10<sup>3</sup>μs = 1ms, 10<sup>6</sup>μs = 1s
-#### Example
+
+## Example
 
 Parsing `((())()(()`
 ![tree image](tree.png)
