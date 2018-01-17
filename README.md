@@ -1,4 +1,4 @@
-# ISBSRN - *I* *S*hould *B*e *S*tudying *R*ight *N*ow
+# ISBSRN - I Should Be Studying Right Now
 
 But I needed to write something to parse a file of brackets for syntax highlighting.
 
