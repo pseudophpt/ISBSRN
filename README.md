@@ -51,6 +51,7 @@ Bracket count | Speed (μs)
 10<sup>3</sup>μs = 1ms, 10<sup>6</sup>μs = 1s
 
 
+![speed plot](plot.png)
 ## Example
 
 Parsing `((())()(()`
