@@ -10,6 +10,7 @@ class parse_node {
         bool closed;
     public:
         parse_node (parse_node *parent);
+        ~parse_node ();
         parse_node *open_node (void);
         parse_node *close_node (void);
         bool get_closed(void);

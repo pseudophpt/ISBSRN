@@ -1,5 +1,11 @@
 #include "isbsrn.h"
 
+parse_node::~parse_node () {
+    /* Delete all its children */
+    for (parse_node *child : children) 
+        delete child;
+}
+
 bool parse_node::get_closed (void) {
     return closed;
 }
