@@ -1,0 +1,23 @@
+#set logscale x 4 
+#set logscale y 4
+
+set size square
+
+set key outside
+set key right top
+
+set xlabel "Input size (brackets)"
+set ylabel "Speed (μs)"
+
+f(x) = m*x + b
+fit f(x) "data" via m,b
+
+g(x) = m2*x + b2
+fit g(x) "data2" via m2,b2
+
+title_f(a,b) = sprintf('f(x) = %.2fx + %.2f', a, b)
+title_g(a,b) = sprintf('g(x) = %.2fx + %.2f', a, b)
+
+plot "data" title "parse" with points pt 5, f(x) title title_f(m,b) lw 1 lt 2 dt 3, "data2" title "delete" with points pt 3, g(x) title title_g(m2,b2) lw 1 lt 2 dt 3
+
+pause -1
