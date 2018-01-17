@@ -50,12 +50,12 @@ Bracket count | Speed (μs)
 
 10<sup>3</sup>μs = 1ms, 10<sup>6</sup>μs = 1s
 
-![speed plot](plot.png)
+![speed plot](https://raw.githubusercontent.com/pseudophpt/ISBSRN/master/plot.png)
 
 ## Example
 
 Parsing `((())()(()`
-![tree image](tree.png)
+![tree image](https://raw.githubusercontent.com/pseudophpt/ISBSRN/master/tree.png)
 
 By hand, we can also get the answer of 
 
