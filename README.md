@@ -54,6 +54,7 @@ Bracket count | Speed (μs)
 ## Example
 
 Parsing `((())()(()`
+
 ![tree image](tree.png)
 
 By hand, we can also get the answer of 
